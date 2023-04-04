@@ -9,15 +9,14 @@ import "./index.css";
 import Single from './pages/Single';
 import Login from './pages/Login';
 import Write from './pages/Write';
-
-
+import Home from './pages/Home';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>
-      <Navbar/>
-    </div>,
+    element: <Layout/>,
   },
   {
     path: "/Single",
@@ -40,6 +39,16 @@ function App() {
   <RouterProvider router={router}/> 
     </div>
   );
+}
+
+const Layout = () => {
+  return (
+    <>
+      <Navbar/>
+      <Outlet/>
+      <Footer/>
+    </>
+  )
 }
 
 export default App
