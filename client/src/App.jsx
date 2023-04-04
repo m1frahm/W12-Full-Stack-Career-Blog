@@ -19,11 +19,18 @@ import Navbar from "./components/Navbar";
 //   )
 // }
 
+// /
+//  -> /
+//   -> /home
+//   -> /profile
+//  -> /login
+//  -> terms
+
 function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path="/app"
         element={
           <>
             <Navbar />
