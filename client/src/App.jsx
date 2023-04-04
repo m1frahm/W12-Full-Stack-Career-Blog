@@ -6,11 +6,28 @@ import {
   Route,
 } from "react-router-dom";
 import "./index.css";
+import Single from './pages/Single';
+import Login from './pages/Login';
+import Write from './pages/Write';
+
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <div>This is the home page</div>,
+  },
+  {
+    path: "/Single",
+    element: <Single/>,
+  },
+  {
+    path: "/Login",
+    element: <Login/>,
+  },
+  {
+    path: "/Write",
+    element: <Write/>,
   },
 ]);
 

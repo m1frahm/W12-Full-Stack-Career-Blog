@@ -1,9 +1,9 @@
 import React from "react";
 
-const WriteOrAdd = () => {
+const Write = () => {
     return (
         <div>Write or Add Article Page</div>
     )
 }
 
-export default WriteOrAdd
+export default Write
