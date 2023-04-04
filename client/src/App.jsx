@@ -15,7 +15,9 @@ import Write from './pages/Write';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>This is the home page</div>,
+    element: <div>
+      <Navbar/>
+    </div>,
   },
   {
     path: "/Single",
