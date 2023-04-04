@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  Outlet,
 } from "react-router-dom";
 import "./index.css";
 import Single from './pages/Single';
@@ -26,33 +27,11 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
-    children: [
-      {
-        path: "/",
-        element:<Home/>
-      },
-      {
-        path: "/single",
-        element:<Single/>
-      },
-      {
-        path: "/write",
-        element:<Write/>
-      }
-    ]
+    element: <div>Hello</div>
   },
   {
-    path: "/Single",
-    element: <Single/>,
-  },
-  {
-    path: "/Login",
-    element: <Login/>,
-  },
-  {
-    path: "/Write",
-    element: <Write/>,
+    path: "/login",
+    element: <Login/>
   },
 ]);
 
