@@ -9,41 +9,28 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
-// const Layout = () => {
-//   return (
-//     <>
-//       <Navbar/>
-//       <Outlet/>
-//       <Footer/>
-//     </>
-//   )
-// }
-
-// /
-//  -> /
-//   -> /home
-//   -> /profile
-//  -> /login
-//  -> terms
-
 function App() {
   return (
-    <Routes>
-      <Route
-        element={
-          <>
-            <Navbar />
-            <Outlet />
-            <Footer />
-          </>
-        }
-      >
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/write" element={<Write />} />
-        <Route path="/post/:id" element={<Single />} />
-      </Route>
-    </Routes>
+    <div className="app">
+      <div className="container">
+        <Routes>
+          <Route
+            element={
+              <>
+                <Navbar />
+                <Outlet />
+                <Footer />
+              </>
+            }
+          >
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/write" element={<Write />} />
+            <Route path="/post/:id" element={<Single />} />
+          </Route>
+        </Routes>
+      </div>
+    </div>
   );
 }
 
