@@ -30,7 +30,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/app"
+        path="/"
         element={
           <>
             <Navbar />
@@ -40,8 +40,6 @@ function App() {
         }
       />
       <Route path="/login" element={<Login />} />
-      <Route path="/write" element={<Write />} />
-      <Route path="/single" element={<Single />} />
     </Routes>
   );
 }
