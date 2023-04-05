@@ -33,6 +33,7 @@
 // export default MyNavBar;
 
 import React from "react";
+import {Link} from "react-router-dom";
 import Logo from "../images/intelligent_change_logo.png"
 
 const Navbar = () => {
@@ -42,7 +43,9 @@ const Navbar = () => {
         <div className="logo">
         <img src={Logo} alt=""/>
         </div>
-        <div className="links">links</div>
+        <div className="links">
+        <Link className='Link'>MINDFULNESS</Link>
+        </div>
       </div>
     </div>
   );
