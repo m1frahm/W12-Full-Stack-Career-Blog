@@ -33,18 +33,26 @@
 // export default MyNavBar;
 
 import React from "react";
-import {Link} from "react-router-dom";
-import Logo from "../images/intelligent_change_logo.png"
+import { Link } from "react-router-dom";
+import Logo from "../images/intelligent_change_logo.png";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
         <div className="logo">
-        <img src={Logo} alt=""/>
+          <img src={Logo} alt="" />
         </div>
         <div className="links">
-        <Link className='Link'>MINDFULNESS</Link>
+          <Link className="Link" to="/?cat=mindfulness">
+            <h6>Mindfulness</h6>
+          </Link>
+          <Link className="Link" to="/?cat=morningroutine">
+            <h6>Morning Routine</h6>
+          </Link>
+          <Link className="Link" to="/?cat=productivity">
+            <h6>Productivity</h6>
+          </Link>
         </div>
       </div>
     </div>

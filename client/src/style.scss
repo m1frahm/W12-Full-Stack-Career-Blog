@@ -6,7 +6,10 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
     .container {
         width: 1024px; 
 
-        
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
 
 
         //Styling for Login Page
