@@ -53,6 +53,13 @@ const Navbar = () => {
           <Link className="Link" to="/?cat=productivity">
             <h6>Productivity</h6>
           </Link>
+          <span>Mimi Ikonn</span>
+          <br></br>
+          <span>Logout</span>
+          <br></br>
+          <span className="write">
+            <Link to="/write">Add Post</Link>
+          </span>
         </div>
       </div>
     </div>

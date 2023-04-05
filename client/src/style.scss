@@ -3,10 +3,11 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
 .app {
     display: flex;
     justify-content: center;
-    .container {
-        width: 1024px; 
 
-        .link{
+    .container {
+        width: 1024px;
+
+        .link {
             text-decoration: none;
             color: inherit;
         }
@@ -48,19 +49,26 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
             padding: 10px;
             background-color: #F6B3BF;
             cursor: pointer;
-            color:rgb(9, 24, 67) ;
+            color: rgb(9, 24, 67);
         }
 
 
 
         //Styling for NavBar
 
-        .navbar{
-            .container{
+        .navbar {
+            .container {
                 padding: 10px 0px; //10px top/botton //0px left right
                 display: flex;
-               .logo{}
-               .links{} 
+
+                .logo {
+                
+                }
+
+                .links {
+                    display: flex; //was not able to achieve horizontal view 
+                    gap: 10px;
+                }
             }
         }
     }
