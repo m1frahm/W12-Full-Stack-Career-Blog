@@ -30,5 +30,17 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
             //   width: 200px;
             gap: 20px; //gave desirable spacing
         }
+
+        input {
+            padding: 10px; //made username & password box bigger 
+            border-color: black;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #F6B3BF;
+            cursor: pointer;
+            color:rgb(9, 24, 67) ;
+        }
     }
 }
