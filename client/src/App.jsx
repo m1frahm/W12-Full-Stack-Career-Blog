@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import "./index.css";
 import Single from "./pages/Single";
 import Login from "./pages/Login";
@@ -30,18 +30,19 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/"
         element={
           <>
             <Navbar />
-            <Home />
+            <Outlet />
             <Footer />
           </>
         }
-      />
-      <Route path="/login" element={<Login />} />
-      <Route path="/write" element={<Write />} />
-      <Route path="/single" element={<Single />} />
+      >
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/write" element={<Write />} />
+        <Route path="/single" element={<Single />} />
+      </Route>
     </Routes>
   );
 }
