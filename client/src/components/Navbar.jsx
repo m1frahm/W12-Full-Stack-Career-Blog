@@ -33,12 +33,15 @@
 // export default MyNavBar;
 
 import React from "react";
+import Logo from "../images/intelligent_change_logo.png"
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        <div className="logo">logo</div>
+        <div className="logo">
+        <img src="" alt=""/>
+        </div>
         <div className="links">links</div>
       </div>
     </div>
