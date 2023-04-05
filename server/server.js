@@ -6,7 +6,7 @@ const db = require('./db/db-connection.js');
 
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 app.use(cors());
 app.use(express.json());
 
@@ -86,5 +86,5 @@ app.put('/api/students/:studentId', async (req, res) =>{
 
 // console.log that your server is up and running
 app.listen(PORT, () => {
-    console.log(`Hola, Server listening on ${PORT}`);
+    console.log(`Back-end, Server listening on ${PORT}`);
 });
