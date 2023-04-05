@@ -41,7 +41,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/write" element={<Write />} />
-        <Route path="/single" element={<Single />} />
+        <Route path="/post/:id" element={<Single />} />
       </Route>
     </Routes>
   );
