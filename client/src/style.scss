@@ -92,6 +92,32 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
                         height: 50px; //does not make footer image smaller
                     }
                 }
+
+         //Styling for Home
+                .home {
+
+                    .posts{
+                       margin-top: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 150px; //supposed to add gap but did not work
+                    }
+
+                    .post{
+                        display:flex; //did not work did not push to the right
+                    }
+
+                    .img{
+                        flex: 1;
+                        width: 100%; //makes image smaller
+                    }
+
+                    .content{
+                        flex: 2;
+                    }
+
+                }
+
             }
         }
     }
