@@ -12,26 +12,29 @@ import "./style.scss";
 
 function App() {
   return (
-    <Routes>
-      <Route
-        element={
-          <>
-            <Navbar />
-            <div className="app">
-              <div className="container">
+    <div className="app">
+      <div>
+        <div className="container"></div>
+        <Routes>
+          <Route
+            element={
+              <>
+                <Navbar />
+
                 <Outlet />
-              </div>
-            </div>
-            <Footer />
-          </>
-        }
-      >
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/write" element={<Write />} />
-        <Route path="/post/:id" element={<Single />} />
-      </Route>
-    </Routes>
+
+                <Footer />
+              </>
+            }
+          >
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/write" element={<Write />} />
+            <Route path="/post/:id" element={<Single />} />
+          </Route>
+        </Routes>
+      </div>
+    </div>
   );
 }
 
