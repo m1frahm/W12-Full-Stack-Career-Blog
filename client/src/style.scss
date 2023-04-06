@@ -13,7 +13,9 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
         }
 
 
+
         //Styling for Login Page
+
 
         .auth {
             display: flex;
@@ -83,6 +85,13 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
                 //     color: yellow;
                 //     background-color: white;
                 // }
+
+                footer{
+                    margin-top: 100px; //does not create space between images
+                    img{
+                        height: 50px; //does not make footer image smaller
+                    }
+                }
             }
         }
     }
