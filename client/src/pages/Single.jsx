@@ -2,7 +2,11 @@ import React from "react";
 
 const Single = () => {
     return (
-        <div>Single Page</div>
+        <div className="single">
+        <div className="content">content</div>
+        <div className="menu">menu</div>
+
+        </div>
     )
 }
 
