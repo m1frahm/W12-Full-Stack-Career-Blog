@@ -2,7 +2,16 @@ import React from "react";
 
 const Write = () => {
     return (
-        <div>Write or Add Article Page</div>
+        <div className="add">
+            <div className="content">
+            <input type="text" placeholder="Title of Article" />
+            </div>
+            <div className="menu">
+            <div className="item">item1</div>
+            <div className="item">item2</div>
+            </div>
+
+        </div>
     )
 }
 
