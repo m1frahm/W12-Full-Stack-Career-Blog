@@ -25,37 +25,37 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
             //background-color: lightcoral; //don't like the look of this
             height: 100vh; //pushed down height of login page
             background-color: $mildpink;
-        
 
-        h1 {
-            font-size: 100px; //refers to Login styling
-            color: rgb(9, 24, 67);
-            margin-bottom: 120px;
+
+            h1 {
+                font-size: 100px; //refers to Login styling
+                color: rgb(9, 24, 67);
+                margin-bottom: 120px;
+            }
+
+            form {
+                display: flex; //this changed the look of username/pass/button box
+                flex-direction: column;
+                //    padding: 10px; //adding background to my boxes
+                //    background-color: white; //this didn't work the way I envisioned, its my div placement
+                //   width: 200px;
+                gap: 20px; //gave desirable spacing
+
+
+                input {
+                    padding: 10px; //made username & password box bigger 
+                    border-color: black;
+                }
+
+                button {
+                    padding: 10px;
+                    background-color: #F6B3BF;
+                    cursor: pointer;
+                    color: rgb(9, 24, 67);
+                }
+
+            }
         }
-
-        form {
-            display: flex; //this changed the look of username/pass/button box
-            flex-direction: column;
-            //    padding: 10px; //adding background to my boxes
-            //    background-color: white; //this didn't work the way I envisioned, its my div placement
-            //   width: 200px;
-            gap: 20px; //gave desirable spacing
-        
-
-        input {
-            padding: 10px; //made username & password box bigger 
-            border-color: black;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #F6B3BF;
-            cursor: pointer;
-            color: rgb(9, 24, 67);
-        }
-
-    }
-}
 
 
 
@@ -89,52 +89,61 @@ $mildpink: #FCE6EA; //coming from https://www.htmlcsscolor.com/hex/F6B3BF
                 //     background-color: white;
                 // }
 
-                footer{
+                footer {
                     margin-top: 100px; //does not create space between images
-                    img{
+
+                    img {
                         height: 50px; //does not make footer image smaller
                     }
                 }
 
-         //Styling for Home
+                //Styling for Home
                 .home {
 
-                    .posts{
-                       margin-top: 50px;
+                    .posts {
+                        margin-top: 50px;
                         display: flex;
                         flex-direction: column;
                         gap: 150px; //supposed to add gap but did not work
                     }
 
-                    .post{
-                        display:flex; //did not work did not push to the right
+                    .post {
+                        display: flex; //did not work did not push to the right
                     }
 
-                    .img{
+                    .img {
                         flex: 1;
                         width: 100%; //makes image smaller
                     }
 
-                    .content{
+                    .content {
                         flex: 2;
                     }
 
                 }
 
 
-        //Styling for SINGLE PAGE
-          
-        .single{
-            display: flex;
-            gap: 50px;
-        }
+                //Styling for SINGLE PAGE
 
-        .content{
-            flex:5;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
+                .single {
+                    display: flex;
+                    gap: 50px;
+
+                    .content {
+                        flex: 5;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+
+
+                        .user {
+                            img {
+                                width: 50px;
+                            }
+                        }
+
+                    }
+                }
 
             }
         }
