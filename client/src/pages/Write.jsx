@@ -5,7 +5,7 @@ import "react-quill/dist/quill.snow.css";
 let Write = () => {
 
     let [value, setValue] = useState('')
-    console.log(value);
+    console.log(value); //shows what you type in console just for testing purposes
   return (
     <div className="add">
       <div className="content">
@@ -19,7 +19,18 @@ let Write = () => {
         </div>
       </div>
       <div className="menu">
-        <div className="item">item1</div>
+        <div className="item">
+        <br></br>
+            <h1>Publish</h1>
+            <span>
+                <b>Status: </b> Draft
+            </span>
+            <span>
+                <b>Visibility: </b> Public
+            </span>
+            <input type="file" id="file" name=""/>
+            <label htmlFor="file"></label>
+        </div>
         <div className="item">item2</div>
       </div>
     </div>
