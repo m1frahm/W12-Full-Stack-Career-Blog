@@ -28,8 +28,8 @@ let Write = () => {
             <span>
                 <b>Visibility: </b> Public
             </span>
-            <input type="file" id="file" name=""/>
-            <label htmlFor="file"></label>
+            <input style={{display:"none"}}type="file" id="file" name=""/>
+            <label htmlFor="file">Upload Image</label>
         </div>
         <div className="item">item2</div>
       </div>
